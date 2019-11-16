@@ -35,7 +35,7 @@ class GameOverFragment : Fragment() {
         // Add OnClick Handler for Try Again button
         binding.tryAgainButton.setOnClickListener{view: View->
             view.findNavController()
-                    .navigate(R.id.action_gameOverFragment2_to_gameFragment)}
+                    .navigate(GameOverFragmentDirections.actionGameOverFragment2ToGameFragment())}
 
         return binding.root
     }
